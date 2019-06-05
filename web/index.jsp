@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Oliver
-  Date: 2019/6/4
-  Time: 23:04
+  Date: 2019/6/3
+  Time: 16:15
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,6 +11,13 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <form action="transfer" method="post">
+    转账账户：<input type="text" name="accOutAccNo"> <br/>
+    密码：<input type="password" name="accOutPassword"> <br/>
+    金额：<input type="text" name="accOutBalance"> <br/>
+    收款账户：<input type="text" name="accInAccNo"> <br/>
+    收款姓名：<input type="text" name="accInName"> <br/>
+    <input type="submit" value="转账">
+  </form>
   </body>
 </html>
